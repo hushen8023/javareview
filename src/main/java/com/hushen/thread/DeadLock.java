@@ -2,6 +2,7 @@ package com.hushen.thread;
 
 /**
  * 解决方法:1、以确定的顺序获得锁 2、超时放弃，请求超时放弃所有锁
+ * 
  * @author Sonny
  *
  */
