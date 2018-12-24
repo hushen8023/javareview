@@ -10,7 +10,6 @@ import org.apache.commons.httpclient.methods.PostMethod;
 /**
  * 在网络连接池也会发生死锁，假设此时有两个线程A和B，两个数据库连接池N1和N2，连接池大小都只有1，如果线程A按照先N1后N2的顺序获得网络连接，
  * 而线程B按照先N2后N1的顺序获得网络连接，并且两个线程在完成执行之前都不释放自己已经持有的链接，因此也造成了死锁。
- * 
  * @author Sonny
  *
  */
