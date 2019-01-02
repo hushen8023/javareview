@@ -1,4 +1,4 @@
-package com.hushen.spiderdanmu;
+package com.hushen.spiderdanmu.cnblogs;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

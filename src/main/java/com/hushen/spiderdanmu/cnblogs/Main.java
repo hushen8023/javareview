@@ -1,4 +1,4 @@
-package com.hushen.spiderdanmu;
+package com.hushen.spiderdanmu.cnblogs;
 
 import java.util.Set;
 
@@ -18,9 +18,9 @@ public class Main {
             if (doc == null) {
                 continue;
             }
-            Set<String> urlSet = downloader.parsePage(doc, "(http://www.cnblogs.com/artech/p|http://www.cnblogs.com/artech/default|http://www.cnblogs.com/artech/archive/\\d{4}/\\d{2}/\\d{2}/).*");
+            Set<String> urlSet = downloader.parsePage(doc, "(https://www.cnblogs.com/artech/p|https://www.cnblogs.com/artech/default|https://www.cnblogs.com/artech/archive/\\d{4}/\\d{2}/\\d{2}/).*");
             urlQueue.enQueue(urlSet);
-            downloader.savePage(doc, "C:/Users/Sonny/Desktop/test", null, "(http://www.cnblogs.com/artech/p|http://www.cnblogs.com/artech/archive/\\d{4}/\\d{2}/\\d{2}/).*");
+            downloader.savePage(doc, "C:/Users/Sonny/Desktop/test", null, "(https://www.cnblogs.com/artech/p|https://www.cnblogs.com/artech/archive/\\d{4}/\\d{2}/\\d{2}/).*");
             System.out.println("已请求" + urlQueue.getVisitedCount() + "个页面");
         }
         long end = System.currentTimeMillis();

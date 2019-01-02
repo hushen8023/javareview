@@ -1,4 +1,4 @@
-package com.hushen.spiderdanmu;
+package com.hushen.spiderdanmu.cnblogs;
 
 import java.io.File;
 import java.io.FileNotFoundException;
